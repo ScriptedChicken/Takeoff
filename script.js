@@ -28,7 +28,8 @@ function handleSearch() {
     var userInput = searchBar.value.trim(); // Get the user input from the search bar
 
     // Send the user input to the server
-    fetch('http://127.0.0.1:5000/suggestions', {
+    api_url = 'http://scriptedchicken.pythonanywhere.com'
+    fetch(api_url + '/suggestions', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
